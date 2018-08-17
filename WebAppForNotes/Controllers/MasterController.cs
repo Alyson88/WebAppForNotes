@@ -7,18 +7,15 @@ using WebAppForNotes.DAL;
 
 namespace WebAppForNotes.Controllers
 {
-    public class HomeController : MasterController
+    public class MasterController : Controller
     {
+        private const string UsernameKey = "AppUser_Username";
+        private const string IsAdminKey = "IsAdmin";
         private readonly IAppUserDAO appUserDAO;
 
-        public HomeController(IAppUserDAO appUserDAO) : base(appUserDAO)
+        public MasterController(IAppUserDAO appUserDAO)
         {
             this.appUserDAO = appUserDAO;
-        }
-
-        public ActionResult Index()
-        {
-            return View();
         }
     }
 }

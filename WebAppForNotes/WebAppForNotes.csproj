@@ -163,14 +163,21 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\Ninject.Web.Common.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AppUserController.cs" />
     <Compile Include="Controllers\CheatSheetController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HowToController.cs" />
+    <Compile Include="Controllers\MasterController.cs" />
     <Compile Include="Controllers\NotesController.cs" />
     <Compile Include="Controllers\ToolsController.cs" />
+    <Compile Include="DAL\AppUserDAO.cs" />
+    <Compile Include="DAL\IAppUserDAO.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\AppUserViewModel.cs" />
+    <Compile Include="Models\AppUserLoginModel.cs" />
+    <Compile Include="Models\AppUserRegisterModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -209,15 +216,16 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\AppUser\Index.cshtml" />
+    <Content Include="Views\AppUser\AppUserLoginForm.cshtml" />
+    <Content Include="Views\AppUser\AppUserRegisterForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
     <Folder Include="Views\CheatSheet\" />
     <Folder Include="Views\HowTo\" />
+    <Folder Include="Views\Master\" />
     <Folder Include="Views\Notes\" />
     <Folder Include="Views\Tools\" />
   </ItemGroup>

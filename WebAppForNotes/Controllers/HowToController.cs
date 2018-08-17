@@ -3,12 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebAppForNotes.DAL;
 
 namespace WebAppForNotes.Controllers
 {
-    public class HowToController : Controller
+    public class HowToController : MasterController
     {
-        // GET: HowTo
+        private readonly IAppUserDAO appUserDAO;
+
+        public HowToController(IAppUserDAO appUserDAO) : base(appUserDAO)
+        {
+            this.appUserDAO = appUserDAO;
+        }
+
         public ActionResult Index()
         {
             return View();
