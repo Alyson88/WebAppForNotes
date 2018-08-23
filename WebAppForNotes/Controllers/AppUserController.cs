@@ -20,6 +20,8 @@ namespace WebAppForNotes.Controllers
         public ActionResult Index()
         {
             var model = new AppUserViewModel();
+            model.AppUserLoginModel = new AppUserLoginModel();
+            model.AppUserRegisterModel = new AppUserRegisterModel();
             return View(model);
         }
     }

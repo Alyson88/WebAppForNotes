@@ -178,6 +178,7 @@
     <Compile Include="Models\AppUserViewModel.cs" />
     <Compile Include="Models\AppUserLoginModel.cs" />
     <Compile Include="Models\AppUserRegisterModel.cs" />
+    <Compile Include="Models\DataAppUserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

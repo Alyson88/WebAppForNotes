@@ -8,8 +8,8 @@ namespace WebAppForNotes.Models
 {
     public class AppUserViewModel
     {
-        public AppUserLoginModel AppUserLogin { get; set; }
+        public AppUserLoginModel AppUserLoginModel { get; set; }
 
-        public AppUserRegisterModel AppUserRegister { get; set; }
+        public AppUserRegisterModel AppUserRegisterModel { get; set; }
     }
 }
